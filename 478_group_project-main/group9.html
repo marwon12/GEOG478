@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>478 Project - Group 9 - Crime Mapping</title>
+
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #800000;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 30%;
+  height: 400px; /* only for demonstration, should be removed */
+  background: #ccc;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: #f1f1f1;
+  height: 400px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #800000;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+<body>
+
+<h2>College Station Crime Updates</h2>
+<p></p>
+<p>The page below contains updated information on Crime Hotspots in the City of College Station.  </p>
+
+<header>
+  
+</header>
+
+<section>
+  <nav>
+    <ul>
+        <!--Embed :atest Tweets-->
+       
+
+      <li><a href="https://upd.tamu.edu/Pages/Report-a-Crime.aspx#:~:text=%E2%80%8B%E2%80%8B%E2%80%8B%E2%80%8B%E2%80%8B,do%20I%20Report%20a%20Crime&text=To%20report%20any%20non%2Durgent,%E2%80%8B%20or%E2%80%8B%20email%20below.">How to Report a Crime</a></li>
+      <p>                                                              </p>
+      <li><a href="https://upd.tamu.edu/Pages/CrimePrevent.aspx">Crime Prevention</a></li>
+      <p>                                                              </p>
+      <li><a href="https://studentlife.tamu.edu/hp/updwsd/">Register for TAMU Self-Defense Class</a></li>
+    </ul>
+  </nav>
+  
+  <article>
+    <h1>College Station</h1>
+    <!--Embed ArcGIS WebApp-->
+
+<iframe width="400" height="300" frameborder="0" scrolling="no" allowfullscreen src="https://arcg.is/0bjSvz0"></iframe>
+    <p></p>
+    <p></p>
+  </article>
+</section>
+
+<footer>
+  <p>Latest Tweets</p>
+</footer>
+<!--Embed latest Tweets-->
+<a class="twitter-timeline" href="https://twitter.com/KBTXRusty" data-tweet-limit="5" data-width="600" ></a>
+<script async src="http://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+
+</body>
+</html>

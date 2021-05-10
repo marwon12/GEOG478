@@ -1,0 +1,167 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>478 Project - Group 9 - Crime Mapping</title>
+
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: slategray;
+}
+
+/* Style the header */
+header {
+  background-color: #800000;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  width: 100%;
+  height: 200px;
+  color: white;
+}
+
+/* Hosts Twitter Feed */
+nav {
+  float: left;
+  width: 100%;
+  background: #ccc;
+  padding: 20px;
+  
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 10px;
+  width: 100%;
+  font-size: 27px;
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #800000;
+  padding: 10px;
+  text-align: center;
+  width: 100%;
+  height: 200px;
+  color: white;
+}
+/*Splits the page into two uneven halfs*/
+.leftcolumn{
+    float: left;
+    width: 80%;
+}
+.rightcolumn{
+    float: left;
+    width: 20%;
+}
+/*Background for the Links*/
+wbox{
+    float: left;
+    margin: 20px;
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    background-color: #ccc;
+}
+nav wbox {
+  list-style-type: none;
+  padding: 0;
+}
+/*Formating for the Embeded Code*/
+.embed-container {
+    position: relative;
+    padding-bottom: 95%;
+    height: 0;
+    max-width: 100%;
+}
+
+.embed-container iframe, .embed-container object, .embed-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    }
+
+small {
+    position: absolute;
+    z-index: 40;
+    bottom: 0;
+    margin-bottom: -15px;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+<body>
+
+<p></p>
+<header>
+    <h2>College Station Crime</h2>
+</header>
+
+<section>
+    <div class="rightcolumn">
+        <!--Embed latest Tweets-->
+        <nav>
+            <a class="twitter-timeline" href="https://twitter.com/KBTXRusty" data-tweet-limit="5" data-width="5000px"></a>
+            <script async src="http://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </nav>
+    </div>
+    <div class="leftcolumn" style="color:white;">
+        <article>
+            <h1>Crime Map of College Station</h1>
+            <!--Embed ArcGIS WebApp-->
+            <!--<iframe width="400" height="300" frameborder="0" scrolling="no" allowfullscreen src="https://arcg.is/0bjSvz0"></iframe>-->
+            <!--place to put the link for the actual map-->
+            <div class="embed-container"><iframe width="500" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" title="GEOG478ProjectMap" src="https://tamu.maps.arcgis.com/apps/Embed/index.html?webmap=f20c5055f1424a5891603b15fde3f537&extent=-96.3857,30.5026,-96.1591,30.6813&zoom=true&previewImage=false&scale=true&legendlayers=true&disable_scroll=true&theme=dark"></iframe></div>
+        </article>
+        <wbox style="color:black;">
+            <h2>Helpful Links</h2>
+            <ul>
+                <!--Embed Latest Tweets-->
+
+                <li><a href="https://upd.tamu.edu/Pages/Report-a-Crime.aspx#:~:text=%E2%80%8B%E2%80%8B%E2%80%8B%E2%80%8B%E2%80%8B,do%20I%20Report%20a%20Crime&text=To%20report%20any%20non%2Durgent,%E2%80%8B%20or%E2%80%8B%20email%20below.">How to Report a Crime</a></li>
+                <p>                                                              </p>
+                <li><a href="https://upd.tamu.edu/Pages/CrimePrevent.aspx">Crime Prevention</a></li>
+                <p>                                                              </p>
+                <li><a href="https://studentlife.tamu.edu/hp/updwsd/">Register for TAMU Self-Defense Class</a></li>
+            </ul>
+        </wbox>
+    </div>
+</section>
+
+<footer>
+
+</footer>
+
+
+
+</body>
+</html>
